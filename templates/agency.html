@@ -1,0 +1,66 @@
+{% extends 'base.html' %} {% load static %} {% block body %}
+
+<main id="main">
+  <!-- ======= Breadcrumbs Section ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>Agency Staffs</h2>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li>Agency Staffs</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <!-- End Breadcrumbs Section -->
+
+  <section id="" class="about">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-right">
+          <img
+            src="{% static '/img/assistants.png'%}"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>Agency Staffs</h3>
+          <hr />
+          <p class="fst-italic">
+            CAREHUB BELIEVES THE BEST WAY TO ASSIST YOU WITH YOUR STAFFING
+            NEEDS.
+          </p>
+          <ul>
+            <li>
+              <i class="bi bi-arrow-right-circle"></i>
+
+              We recruite Permanent & Temporary Healthcare Professionals.
+            </li>
+            <li>
+              <i class="bi bi-arrow-right-circle"></i>
+
+              Prime Care is always committed to provide high quality staffing
+              solutions by providing well trained and experienced staff through
+              out the year. Having a dedicated agency account team to understand
+              your requirements and changing needs.
+            </li>
+              <hr>
+              <b> Contact Us Now !</b>
+              <br />
+              Write us
+              <a href="#">here</a>
+              or Visit our
+              <a href="/contact/">Office</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<!-- End #main -->
+
+{% endblock %}

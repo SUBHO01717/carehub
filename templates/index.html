@@ -1,0 +1,243 @@
+{% extends 'base.html' %} {% load static %} {% block body %}
+
+<!-- ======= Hero Section ======= -->
+<section id="hero">
+  <div
+    id="heroCarousel"
+    data-bs-interval="5000"
+    class="carousel slide carousel-fade"
+    data-bs-ride="carousel"
+  >
+    <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+    <div class="carousel-inner" role="listbox">
+      <!-- Slide 1 -->
+      <div
+        class="carousel-item active"
+        style="background-image: url('{% static '/img/slide/slide-1.jpg' %}')"
+      >
+        <div class="container">
+          <h2>
+            Welcome to
+            <span>Care Hub UK</span>
+          </h2>
+          <p>Providing care and support in your own home</p>
+          <a href="#about" class="btn-get-started scrollto">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div
+        class="carousel-item"
+        style="background-image: url('{%static '/img/slide/slide-2.jpg' %}')"
+      >
+        <div class="container">
+          <h2>Care Hub UK</h2>
+          <p>Offers a verity of Skilled and Non-Skilled Services</p>
+          <a href="#about" class="btn-get-started scrollto">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div
+        class="carousel-item"
+        style="background-image: url('{%static '/img/slide/slide-3.jpg' %}')"
+      >
+        <div class="container">
+          <h2>Nursing Care</h2>
+          <p>We are professional Nursing Care Service Provider.</p>
+          <a href="#about" class="btn-get-started scrollto">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <a
+      class="carousel-control-prev"
+      href="#heroCarousel"
+      role="button"
+      data-bs-slide="prev"
+    >
+      <span
+        class="carousel-control-prev-icon bi bi-chevron-left"
+        aria-hidden="true"
+      ></span>
+    </a>
+
+    <a
+      class="carousel-control-next"
+      href="#heroCarousel"
+      role="button"
+      data-bs-slide="next"
+    >
+      <span
+        class="carousel-control-next-icon bi bi-chevron-right"
+        aria-hidden="true"
+      ></span>
+    </a>
+  </div>
+</section>
+<!-- End Hero -->
+
+<main id="main">
+  <!-- ======= Featured Services Section ======= -->
+  <section id="featured-services" class="featured-services">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="fas fa-heartbeat"></i></div>
+            <h4 class="title"><a href="">Time Management</a></h4>
+            <p class="description">
+              We are a provider of flexible, temporary workforce for care homes,
+              nursing homes and residential homes.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="fas fa-pills"></i></div>
+            <h4 class="title"><a href="">Easy Registration</a></h4>
+            <p class="description">
+              We do Job replacement in a very quick time with following few
+              setps of application.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="fas fa-thermometer"></i></div>
+            <h4 class="title"><a href="">Referral Programs</a></h4>
+            <p class="description">
+              We also privide incentive to the referrees.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="fas fa-dna"></i></div>
+            <h4 class="title"><a href="">Flexible Schedules</a></h4>
+            <p class="description">
+              We are also offering job freedom. You can make your own Schedules
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Featured Services Section -->
+
+  <!-- ======= Cta Section ======= -->
+  <section id="cta" class="cta">
+    <div class="container" data-aos="zoom-in">
+      <div class="text-center">
+        <h3>In an emergency? Need help now?</h3>
+        <p>
+          Care Hub UK is managed by medical expert to ensuring that the needs of
+          our patients and professional standards are at the heart of our
+          service delivery.
+          <br />
+          <br />
+          We provide services to Nursing Homes, Care Homes and Residential Homes
+        </p>
+        <a class="cta-btn scrollto" href="#appointment">
+          Make an Make an Appointment
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- End Cta Section -->
+
+  <!-- ======= About Us Section ======= -->
+  <section id="" class="about">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>About Us</h2>
+        <p style="text-align: justify">
+          Care Hub UK is a very reliable nursing agency for placing
+          professionals in nursing and care jobs in and around the London,
+          Surrey and Staffordshire regions, having a committed team of health
+          staff who will expertly match your skills and work preferences to a
+          variety of challenging and fulfilling positions. Leveraging a quality
+          endorsement and strong relationships with both clients and staff, our
+          main objective is to provide you with a paramount service of the
+          highest standard, either on a long term or short term basis.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-right">
+          <img src="{% static '/img/aboutoo.jpg'%}" class="img-fluid" alt="" />
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>Our Mission, Vision & Values</h3>
+          <p class="fst-italic">
+            Care Hub UK ​is an organisation that has developed and evolved from
+            experienced nurses and now boasts a workforce of Nurses, Healthcare
+            Assistants, Domestic and Kitchen staff.
+          </p>
+          <ul>
+            <li>
+              <i class="bi bi-check-circle"></i>
+              <b>Mission :</b>
+              "Getting it right through delivering outstanding service ."
+            </li>
+            <li>
+              <i class="bi bi-check-circle"></i>
+              <b>Vision :</b>
+              To be the leader in the provision of human resource services in
+              the field of the Care Industry throughout the UK
+            </li>
+            <li>
+              <i class="bi bi-check-circle"></i>
+              <b>Values :</b>
+              Our code of conduct embraces the values of Honesty, Integrity,
+              safety, Care, Excellence and accountability.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About Us Section -->
+
+  <!-- ======= Appointment Section ======= -->
+  <section id="appointment" class="appointment section-bg">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Make an Appointment</h2>
+        <p>
+         Make an appointment with us for the services you are looking for. <br> We are here to server you with our best !
+        </p>
+      </div>
+      <div>
+        <div class="form-group">
+          <form action="" method="POST" role="form" class="form-control">
+            <div class="row m-2">
+              {% csrf_token %}
+              <div class="col-md-6 form-group my-2">{{form.name}}</div>
+              <div class="col-md-6 form-group my-2">{{form.email}}</div>
+              <div class="col-md-4 form-group my-2">{{form.phone}}</div>
+              <div class="col-md-4 form-group my-2">{{form.appointment_on}}</div>
+              <div class="col-md-4 form-group my-2">{{form.interested_for}}</div>
+              <div class="col-md-12 form-group">{{form.messages}}</div>
+
+              <div class="text-center mt-2">
+                <button type="submit" class="btn btn-info mb-3">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- End Appointment Section -->
+</main>
+
+<!-- End #main -->
+{% endblock %}

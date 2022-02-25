@@ -1,0 +1,102 @@
+{% extends 'base.html' %} {% load static %} {% block body %}
+
+<main id="main">
+  <!-- ======= Breadcrumbs Section ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>Contact Us</h2>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li>Contact Us</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <!-- End Breadcrumbs Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>
+          You can find us in below map or call us to know more of us. You are
+          very welcome to give us visit or set an appointment.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <iframe
+        style="border: 0; width: 100%; height: 350px"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.211491559226!2d0.02098201597285313!3d51.54602081569934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a797fc900001%3A0x17c4b156957e9aab!2sHouse%20252%2C%20262%20Romford%20Rd%2C%20London%20E7%209HZ%2C%20UK!5e0!3m2!1sen!2sbd!4v1645254703507!5m2!1sen!2sbd"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="info-box">
+                <i class="bx bx-map"></i>
+                <h3>Our Address</h3>
+                <p>
+                  UNIT-605, 252-262 ROMFORD ROAD,FOREST GATE, LONDON, E7 9HZ
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box mt-4">
+                <i class="bx bx-envelope"></i>
+                <h3>Email Us</h3>
+                <p>
+                  info@example.com
+                  <br />
+                  contact@example.com
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box mt-4">
+                <i class="bx bx-phone-call"></i>
+                <h3>Call Us</h3>
+                <p>
+                  07949779012
+                  <br />
+                  0203 00 23 555
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="form-group">
+            <form action="" method="POST" role="form" class="form-control">
+              <div class="row m-2">
+                {% csrf_token %}
+                <div class="col-md-6 form-group my-2">{{form.name}}</div>
+                <div class="col-md-6 form-group my-2">{{form.email}}</div>
+                <div class="col-md-12 form-group my-2">{{form.subject}}</div>
+                <div class="col-md-12 form-group my-2">{{form.message}}</div>
+                <div class="text-center mt-2">
+                  <button type="submit" class="btn btn-info mb-3">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+</main>
+<!-- End #main -->
+
+{% endblock %}

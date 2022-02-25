@@ -1,0 +1,92 @@
+{% extends 'base.html' %} {% load static %} {% block body %}
+
+<main id="main">
+  <!-- ======= Breadcrumbs Section ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>Training</h2>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li>Training</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <!-- End Breadcrumbs Section -->
+
+  <section id="" class="about">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-right">
+          <img src="{% static '/img/aboutoo.jpg'%}" class="img-fluid" alt="" />
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>Staff Training</h3>
+          <hr />
+          <p class="fst-italic">
+            As part of Induction and orientation, we run our own in-house
+            training, which covers both mandatory courses as well as bespoke
+            training developed specifically for our individual clients.
+          </p>
+
+          <b>Our Mandatory Training Course Includes:</b>
+          <ul>
+            <li>
+              <i class="bi bi-arrow-right-circle"></i>
+              Information Governance
+            </li>
+            <li>
+              <i class="bi bi-arrow-right-circle"></i>
+              Health and Safety
+            </li>
+            <li>
+              <i class="bi bi-arrow-right-circle"></i>
+              Fire Safety
+            </li>
+            <li>
+              <i class="bi bi-arrow-right-circle"></i>
+              Equality & Diversity
+            </li>
+            <li>
+              <i class="bi bi-arrow-right-circle"></i>
+              Infection Control
+            </li>
+            <li>
+              <i class="bi bi-arrow-right-circle"></i>
+              Food Hygiene
+            </li>
+            <li>
+              <i class="bi bi-arrow-right-circle"></i>
+              Basic Life Support
+            </li>
+            <li>
+              <i class="bi bi-arrow-right-circle"></i>
+              Moving & Handling
+            </li>
+            <li>
+              <i class="bi bi-arrow-right-circle"></i>
+              Protection of Vulnerable Adults
+            </li>
+            <li>
+              <i class="bi bi-arrow-right-circle"></i>
+              Complaints Handling + Conflict Managment
+            </li>
+            <li>
+              <i class="bi bi-arrow-right-circle"></i>
+              Lone Worker
+            </li>
+            <br />
+            <li>
+              If you need any further info regarding training kindly
+              <a href="/contact/">contact office.</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- End #main -->
+
+{% endblock %}
